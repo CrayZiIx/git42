@@ -4,5 +4,5 @@ char *ft_strchr(const char *s, int c) {
     while (*s != '\0' && *s != c) {
         s++;
     }
-    return (*s == c) ? (char *) s : NULL;
+    return (*s == c) ? (char *) s : 0;
 }

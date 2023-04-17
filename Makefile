@@ -25,4 +25,6 @@ finish :
 	make lib
 	make prog
 
+re :
+	make finish
 	

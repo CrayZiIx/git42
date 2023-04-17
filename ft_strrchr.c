@@ -2,7 +2,7 @@
 
 char *ft_strrchr(const char *s, int c)
 {
-    char *last_occurrence = NULL;
+    char *last_occurrence = 0;
     
     while (*s != '\0')
     {
@@ -12,7 +12,7 @@ char *ft_strrchr(const char *s, int c)
         }
         s++;
     }
-    if (last_occurrence != NULL)
+    if (last_occurrence != 0)
     {
         return last_occurrence;
     }
@@ -20,5 +20,5 @@ char *ft_strrchr(const char *s, int c)
     {
         return (char *)s;
     }
-    return NULL;
+    return 0;
 }
